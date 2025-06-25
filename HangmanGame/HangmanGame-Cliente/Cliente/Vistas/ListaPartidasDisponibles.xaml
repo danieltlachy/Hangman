@@ -1,0 +1,101 @@
+﻿<Page x:Class="HangmanGame_Cliente.Cliente.Vistas.ListaPartidasDisponibles"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HangmanGame_Cliente.Cliente.Vistas"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="ListaPartidasDisponibles">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Cliente/Recursos/defaultBackground.png"/>
+        </Grid.Background>
+        <Label x:Name="lblTituloListaPartidasDisponibles" Content="{DynamicResource lblTituloListaPartidasDisponibles}" HorizontalAlignment="Left" Margin="210,28,0,0" VerticalAlignment="Top" Height="80" Width="816" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="60" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/labelBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="btnIdioma" Tag="en" Content="{DynamicResource btnIdioma}" HorizontalAlignment="Left" Margin="27,35,0,0" VerticalAlignment="Top" Width="154" Height="66" FontFamily="pack://application:,,,/Font/#MedievalSharp"  FontSize="40" Foreground="Black" BorderBrush="{x:Null}" Click="btnCambiarIdioma_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+            </Button.Background>
+        </Button>
+        <ListView Name="listViewPartidas" Margin="236,181,294,266" BorderBrush="Black" Foreground="#E5000000" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="12" BorderThickness="1,1,1,1" SnapsToDevicePixels="False" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="FontFamily" Value="pack://application:,,,/Font/#MedievalSharp"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </ListView.Resources>
+            <ListView.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tableBackground.png"/>
+            </ListView.Background>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nickname" Width="250">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Nickname}" 
+                            Foreground="Black" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" 
+                            FontSize="20"
+                            FontFamily="pack://application:,,,/Font/#MedievalSharp"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Fecha de realización" Width="300">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FechaPartida}" 
+                            Foreground="Black" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" 
+                            FontSize="18"
+                            FontFamily="Georgia" 
+                            TextWrapping="Wrap"
+                            MaxWidth="280"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header=" " Width="230">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Unirse" Width="149" Height="40" 
+                         Background="#00008B" Foreground="White" FontSize="16" 
+                         FontFamily="pack://application:,,,/Font/#MedievalSharp" FontWeight="Bold" Click="Unirse"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnGenerarPartida" Content="{DynamicResource btnGenerarPartida}" HorizontalAlignment="Left" Margin="158,526,0,0" VerticalAlignment="Top" Width="326" Height="66" FontFamily="pack://application:,,,/Font/#MedievalSharp"  FontSize="40" Foreground="Black" BorderBrush="{x:Null}" Click="GenerarPartida" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="{DynamicResource btnVerEstadisticas}" HorizontalAlignment="Left" Margin="492,526,0,0" VerticalAlignment="Top" Width="310" Height="66" FontFamily="pack://application:,,,/Font/#MedievalSharp"  FontSize="40" Foreground="Black" BorderBrush="{x:Null}" Click="VerEstadisticas">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="{DynamicResource btnModificarPerfil}" HorizontalAlignment="Left" Margin="814,526,0,0" VerticalAlignment="Top" Width="310" Height="66" FontFamily="pack://application:,,,/Font/#MedievalSharp"  FontSize="40" Foreground="Black" BorderBrush="{x:Null}" Click="ModificarPerfil">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="76af113c-a0a2-4f4f-9dff-8c9c9750d7ae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8001/HangmanService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="4e8e2544-f609-4408-b1f4-38436705d78e" SourceId="1" SourceUrl="net.tcp://localhost:8001/HangmanService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="7a083b52-5e88-43d7-9d09-82f261bfdd83" SourceId="1" SourceUrl="net.tcp://localhost:8001/HangmanService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="4f7b3fd9-932f-49e3-ae69-860327dc9850" SourceId="1" SourceUrl="net.tcp://localhost:8001/HangmanService/mex" />
+    <MetadataFile FileName="Biblioteca.DTO.xsd" MetadataType="Schema" ID="ffa75c29-c7ae-4140-93dc-4f4b74c122b0" SourceId="1" SourceUrl="net.tcp://localhost:8001/HangmanService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="a6e6ee25-94b9-4b34-8fd8-b1c6b3fed9d1" SourceId="1" SourceUrl="net.tcp://localhost:8001/HangmanService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

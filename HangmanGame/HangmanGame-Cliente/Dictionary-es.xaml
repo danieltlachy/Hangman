@@ -1,0 +1,139 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!-- IniciarSesión -->
+    <system:String x:Key="lblCorreo">Correo electrónico:</system:String>
+    <system:String x:Key="lblContrasenia">Contraseña:</system:String>
+    <system:String x:Key="btnRegistrarse">¿No tienes una cuenta? ¡Registrate aquí!</system:String>
+    <system:String x:Key="btnIdioma">Inglés</system:String>
+    <system:String x:Key="btnEntrar">Entrar</system:String>
+    <!-- FormularioUsuario -->
+    <system:String x:Key="lblTituloFormularioPerfil">Mi Perfil</system:String>
+    <system:String x:Key="lblNickname">Usuario:</system:String>
+    <system:String x:Key="lblNombreCompleto">Nombre completo:</system:String>
+    <system:String x:Key="lblFechaNacimiento">Fecha de nacimiento:</system:String>
+    <system:String x:Key="lblTelefono">Teléfono celular:</system:String>
+    <system:String x:Key="lblCorreoFormulario">Correo electrónico:</system:String>
+    <system:String x:Key="lblContraseniaFormulario">Contraseña:</system:String>
+    <system:String x:Key="btnGuardarUsuario">Guardar</system:String>
+    <!-- Estadisticas -->
+    <system:String x:Key="lblTituloEstadisticas">Estadísticas</system:String>
+    <system:String x:Key="lblPuntosTotales">Puntos totales: 660 pts</system:String>
+    <!-- FormularioPartida -->
+    <system:String x:Key="btnCategoriaMusica">Musica</system:String>
+    <system:String x:Key="btnCategoriaSeries">Series</system:String>
+    <system:String x:Key="btnCategoriaPeliculas">Peliculas</system:String>
+    <system:String x:Key="btnCancelarCreacionPartida">Cancelar</system:String>
+    <!-- ListaPartidasDisponibles -->
+    <system:String x:Key="lblTituloListaPartidasDisponibles">Lista de partidas disponibles</system:String>
+    <system:String x:Key="btnGenerarPartida">Generar partida</system:String>
+    <system:String x:Key="btnIngresarCodigo">Ingresar código</system:String>
+    <system:String x:Key="btnModificarPerfil">Modificar perfil</system:String>
+    <system:String x:Key="btnVerEstadisticas">Ver estadísticas</system:String>
+    <!-- SalaDeEspera -->
+    <system:String x:Key="lblTituloSalaEspera">Sala de espera</system:String>
+    <system:String x:Key="lblAnuncioCodigoPartida">El código de la partida es:</system:String>
+    <system:String x:Key="btnCancelarIniciarPartida">Cancelar</system:String>
+    <system:String x:Key="btnComenzarIniciarPartida">Comenzar</system:String>
+    <!-- Partida -->
+    <system:String x:Key="btnAbandonarPartida">Abandonar</system:String>
+    <!-- Alertas -->
+    <!-- PalabraAdivinada -->
+    <system:String x:Key="txtBlkTituloPalabraAdivinada1">¡Ganaste la</system:String>
+    <system:String x:Key="txtBlkTituloPalabraAdivinada2">partida!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraAdivinada1">¡Felicidades! ¡Has salido</system:String>
+    <system:String x:Key="txtBlkMensajePalabraAdivinada2">victorioso!</system:String>
+    <system:String x:Key="btnAceptarPalabraAdivinada">Aceptar</system:String>
+    <!-- PalabraAdivinada -->
+    <system:String x:Key="txtBlkTituloPalabraNoAdivinada1">¡Has perdido </system:String>
+    <system:String x:Key="txtBlkTituloPalabraNoAdivinada2">la partida!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraNoAdivinada1">¡Oh no! ¡Has sido ahorcado!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraNoAdivinada2"> :( </system:String>
+    <system:String x:Key="btnAceptarPalabraNoAdivinada">Aceptar</system:String>
+    <!-- InicioSesionExitoso -->
+    <system:String x:Key="txtBlkTituloInicioSesionExitoso1">¡Inicio de sesión</system:String>
+    <system:String x:Key="txtBlkTituloInicioSesionExitoso2">exitoso!</system:String>
+    <system:String x:Key="txtBlkMensajeInicioSesionExitoso1">¡Bienvenido(a) a este</system:String>
+    <system:String x:Key="txtBlkMensajeInicioSesionExitoso2">divertido juego!</system:String>
+    <system:String x:Key="btnAceptarInicioSesionExitoso">Aceptar</system:String>
+    <!-- Credencialeserroneas -->
+    <system:String x:Key="txtBlkTituloCredencialesErroneas1">¡Credenciales</system:String>
+    <system:String x:Key="txtBlkTituloCredencialesErroneas2">erróneas!</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas1">¡Error! Las credenciales ingresadas</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas2">no corresponden a ningún usuario</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas3">registrado! Inténtalo de nuevo</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas4">o hazlo más tarde.</system:String>
+    <system:String x:Key="btnAceptarCredencialesErroneas">Aceptar</system:String>
+    <!-- CamposVacios -->
+    <system:String x:Key="txtBlkTituloCamposVacios1">¡Campos vacíos!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposVacios1">¡Error! ¡Hay campos vacíos!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposVacios2">Complétalos para continuar</system:String>
+    <system:String x:Key="btnAceptarCamposVacios">Aceptar</system:String>
+    <!-- SinConexionBaseDatos-->
+    <system:String x:Key="txtBlkTituloSinConexionBaseDatos1">¡Sin conexión a la</system:String>
+    <system:String x:Key="txtBlkTituloSinConexionBaseDatos2">base de datos!</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos1">¡Error! ¡Ocurrió un error al </system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos2">tratar de conectarse al servidor de</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos3">base de datos! inténtalo más tarde</system:String>
+    <system:String x:Key="btnAceptarSinConexionBaseDatos">Aceptar</system:String>
+    <!-- SinConexionServidor-->
+    <system:String x:Key="txtBlkTituloSinConexionServidor1">¡Sin conexión</system:String>
+    <system:String x:Key="txtBlkTituloSinConexionServidor2">con el servidor!</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor1">¡Error! ¡Ocurrió un error al</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor2">tratar de conectarse al servidor del</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor3">del sistema! Inténtalo más tarde</system:String>
+    <system:String x:Key="btnAceptarSinConexionServidor">Aceptar</system:String>
+    <!-- UsuarioCreadoCorrecto -->
+    <system:String x:Key="txtBlkTituloCreacionUsuarioCorrecto1">¡Usuario creado</system:String>
+    <system:String x:Key="txtBlkTituloCreacionUsuarioCorrecto2">correctamente!</system:String>
+    <system:String x:Key="txtBlkMensajeCreacionUsuarioCorrecto1">¡Registro exitoso! ¿Estás listo para</system:String>
+    <system:String x:Key="txtBlkMensajeCreacionUsuarioCorrecto2">empezar una divertida partida!</system:String>
+    <system:String x:Key="btnAceptarUsuarioCreadoCorrecto">Aceptar</system:String>
+    <!-- UsuarioModificadoCorrecto -->
+    <system:String x:Key="txtBlkTituloModificacionUsuarioCorrecto1">¡Modificación del</system:String>
+    <system:String x:Key="txtBlkTituloModificacionUsuarioCorrecto2">Usuario correctamente!</system:String>
+    <system:String x:Key="txtBlkMensajeModificacionUsuarioCorrecto1">¡Se han modificado los datos</system:String>
+    <system:String x:Key="txtBlkMensajeModificacionUsuarioCorrecto2">del Usuario correctamente!</system:String>
+    <system:String x:Key="btnAceptarModificacionUsuarioCorrecto">Aceptar</system:String>
+    <!-- PartidaCancelada -->
+    <system:String x:Key="txtBlkTituloPalabraCancelada1">¡Partida</system:String>
+    <system:String x:Key="txtBlkTituloPalabraCancelada2">cancelada!</system:String>
+    <system:String x:Key="txtBlkMensajePartidaCancelada1">¡La partida fue cancelada</system:String>
+    <system:String x:Key="txtBlkMensajePartidaCancelada2">por uno de los Jugadores!</system:String>
+    <system:String x:Key="btnAceptarPalabraCancelada">Aceptar</system:String>
+    <!-- CorreoElectronicoErroneo -->
+    <system:String x:Key="txtBlkTituloCorreoErroneo1">¡Correo electrónico</system:String>
+    <system:String x:Key="txtBlkTituloCorreoErroneo2">erróneo!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo1">¡Error! ¡El formato del Correo</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo2"> es ejemplo@ejemplo.com!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo3">Corrigelo para continuar</system:String>
+    <system:String x:Key="btnAceptarCorreoErroneo">Aceptar</system:String>
+    <!-- CorreoElectronicoEnUso -->
+    <system:String x:Key="txtBlkTituloCorreoEnUso1">¡Correo electrónico</system:String>
+    <system:String x:Key="txtBlkTituloCorreoEnUso2">registrado!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso1">¡Error! ¡El Correo Electrónico</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso2">ingresado ya está registrado en el</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso3">sistema! Ingresa una diferente para</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso4">continuar o inténtalo más tarde</system:String>
+    <system:String x:Key="btnAceptarCorreoEnUso">Aceptar</system:String>
+    <!-- CampoErroneo -->
+    <system:String x:Key="txtBlkTituloCamposErroneos1">¡Campo erróneo!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposErroneo1">¡Error! ¡El formato del campo no</system:String>
+    <system:String x:Key="txtBlkMensajeCamposErroneo2">es válido! Corrigelo para continuar</system:String>
+    <system:String x:Key="btnAceptarCampoErroneo">Aceptar</system:String>
+    <!-- FechaNacimientoErroneo -->
+    <system:String x:Key="txtBlkTituloFechaNacimientoErroneo1">¡Fecha de nacimiento</system:String>
+    <system:String x:Key="txtBlkTituloFechaNacimientoErroneo2">errónea!</system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea1">¡Error! ¡El formato debe </system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea2">ser dd-MM-aaaa. Corrigela </system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea3">para continuar</system:String>
+    <system:String x:Key="btnAceptarFechaNacimientoErronea">Aceptar</system:String>
+    <!-- ContraseniaErroneo-->
+    <system:String x:Key="txtBlkTituloContraseniaErroneo1">¡Contraseña</system:String>
+    <system:String x:Key="txtBlkTituloContraseniaErroneo2">errónea!</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo1">¡Error! ¡La contraseña debe ser de 8</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo2">letras, tener una mayúscula, una</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo3"> minúscula y un caracter especial!</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo4">Corrigelo para continuar</system:String>
+    <system:String x:Key="btnAceptarContraseniaErroneo">Aceptar</system:String>
+</ResourceDictionary>

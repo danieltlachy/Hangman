@@ -1,0 +1,139 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!-- IniciarSesión -->
+    <system:String x:Key="lblCorreo">E-mail:</system:String>
+    <system:String x:Key="lblContrasenia">Password:</system:String>
+    <system:String x:Key="btnRegistrarse">Don't have an account? Create one here!</system:String>
+    <system:String x:Key="btnIdioma">Spanish</system:String>
+    <system:String x:Key="btnEntrar">Enter</system:String>
+    <!-- FormularioUsuario -->
+    <system:String x:Key="lblTituloFormularioPerfil">My Profile</system:String>
+    <system:String x:Key="lblNickname">User:</system:String>
+    <system:String x:Key="lblNombreCompleto">Full name:</system:String>
+    <system:String x:Key="lblFechaNacimiento">Birth date:</system:String>
+    <system:String x:Key="lblTelefono">Phone number:</system:String>
+    <system:String x:Key="lblCorreoFormulario">E-mail:</system:String>
+    <system:String x:Key="lblContraseniaFormulario">Password:</system:String>
+    <system:String x:Key="btnGuardarUsuario">Save</system:String>
+    <!-- Estadisticas -->
+    <system:String x:Key="lblTituloEstadisticas">Stats</system:String>
+    <system:String x:Key="lblPuntosTotales">Points: 660 pts</system:String>
+    <!-- FormularioPartida -->
+    <system:String x:Key="btnCategoriaMusica">Music</system:String>
+    <system:String x:Key="btnCategoriaPeliculas">Movies</system:String>
+    <system:String x:Key="btnCategoriaSeries">TV Series</system:String>
+    <system:String x:Key="btnCancelarCreacionPartida">Cancel</system:String>
+    <!-- ListaPartidasDisponibles -->
+    <system:String x:Key="lblTituloListaPartidasDisponibles">Available matches</system:String>
+    <system:String x:Key="btnGenerarPartida">Create match</system:String>
+    <system:String x:Key="btnIngresarCodigo">Enter code</system:String>
+    <system:String x:Key="btnModificarPerfil">Edit profile</system:String>
+    <system:String x:Key="btnVerEstadisticas">Stats</system:String>
+    <!-- SalaDeEspera -->
+    <system:String x:Key="lblTituloSalaEspera">Waiting room</system:String>
+    <system:String x:Key="lblAnuncioCodigoPartida">Match code is:</system:String>
+    <system:String x:Key="btnCancelarIniciarPartida">Cancel</system:String>
+    <system:String x:Key="btnComenzarIniciarPartida">Start</system:String>
+    <!-- Partida -->
+    <system:String x:Key="btnAbandonarPartida">Leave</system:String>
+    <!-- Alertas -->
+    <!-- PalabraAdivinada -->
+    <system:String x:Key="txtBlkTituloPalabraAdivinada1">You have</system:String>
+    <system:String x:Key="txtBlkTituloPalabraAdivinada2">won!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraAdivinada1">Congrats! You've won</system:String>
+    <system:String x:Key="txtBlkMensajePalabraAdivinada2">the match successfully!</system:String>
+    <system:String x:Key="btnAceptarPalabraAdivinada">OK</system:String>
+    <!-- PalabraAdivinada -->
+    <system:String x:Key="txtBlkTituloPalabraNoAdivinada1">You've</system:String>
+    <system:String x:Key="txtBlkTituloPalabraNoAdivinada2">lost!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraNoAdivinada1">Oh no! You've been hangmanded!</system:String>
+    <system:String x:Key="txtBlkMensajePalabraNoAdivinada2"> :( </system:String>
+    <system:String x:Key="btnAceptarPalabraNoAdivinada">OK</system:String>
+    <!-- InicioSesionExitoso -->
+    <system:String x:Key="txtBlkTituloInicioSesionExitoso1">Log In</system:String>
+    <system:String x:Key="txtBlkTituloInicioSesionExitoso2">successful!</system:String>
+    <system:String x:Key="txtBlkMensajeInicioSesionExitoso1">Welcome to this</system:String>
+    <system:String x:Key="txtBlkMensajeInicioSesionExitoso2">jolly game!</system:String>
+    <system:String x:Key="btnAceptarInicioSesionExitoso">OK</system:String>
+    <!-- Credencialeserroneas -->
+    <system:String x:Key="txtBlkTituloCredencialesErroneas1">Wrong</system:String>
+    <system:String x:Key="txtBlkTituloCredencialesErroneas2">credentials!</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas1">ERROR! The entered credentials</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas2">don't match with any registered</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas3">player! Try again</system:String>
+    <system:String x:Key="txtBlkMensajeCredencialesErroneas4">o try it later.</system:String>
+    <system:String x:Key="btnAceptarCredencialesErroneas">OK</system:String>
+    <!-- CamposVacios -->
+    <system:String x:Key="txtBlkTituloCamposVacios1">Empty fields!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposVacios1">ERROR! There's empty fields!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposVacios2">Complete them to continue</system:String>
+    <system:String x:Key="btnAceptarCamposVacios">OK</system:String>
+    <!-- SinConexionBaseDatos-->
+    <system:String x:Key="txtBlkTituloSinConexionBaseDatos1">DataBase </system:String>
+    <system:String x:Key="txtBlkTituloSinConexionBaseDatos2">without connection!</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos1">ERROR! An error occurred while</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos2">trying to connect to the database</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionBaseDatos3">server! Try it later</system:String>
+    <system:String x:Key="btnAceptarSinConexionBaseDatos">Aceptar</system:String>
+    <!-- SinConexionServidor-->
+    <system:String x:Key="txtBlkTituloSinConexionServidor1">¡Server</system:String>
+    <system:String x:Key="txtBlkTituloSinConexionServidor2">without connection!</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor1">ERROR! An error occurred while</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor2">trying to connect to the</system:String>
+    <system:String x:Key="txtBlkMensajeSinConexionServidor3">server! Try it later</system:String>
+    <system:String x:Key="btnAceptarSinConexionServidor">OK</system:String>
+    <!-- UsuarioCreadoCorrecto -->
+    <system:String x:Key="txtBlkTituloCreacionUsuarioCorrecto1">Player created</system:String>
+    <system:String x:Key="txtBlkTituloCreacionUsuarioCorrecto2">successful!</system:String>
+    <system:String x:Key="txtBlkMensajeCreacionUsuarioCorrecto1">Successul registration! Are you ready</system:String>
+    <system:String x:Key="txtBlkMensajeCreacionUsuarioCorrecto2">to start a joyful match!</system:String>
+    <system:String x:Key="btnAceptarUsuarioCreadoCorrecto">OK</system:String>
+    <!-- UsuarioModificadoCorrecto -->
+    <system:String x:Key="txtBlkTituloModificacionUsuarioCorrecto1">Player modified</system:String>
+    <system:String x:Key="txtBlkTituloModificacionUsuarioCorrecto2">correctly!</system:String>
+    <system:String x:Key="txtBlkMensajeModificacionUsuarioCorrecto1">The Player's data has been </system:String>
+    <system:String x:Key="txtBlkMensajeModificacionUsuarioCorrecto2">modified successfully!</system:String>
+    <system:String x:Key="btnAceptarModificacionUsuarioCorrecto">OK</system:String>
+    <!-- PartidaCancelada -->
+    <system:String x:Key="txtBlkTituloPalabraCancelada1">Cancelled</system:String>
+    <system:String x:Key="txtBlkTituloPalabraCancelada2">match!</system:String>
+    <system:String x:Key="txtBlkMensajePartidaCancelada1">The Match has been cancelled</system:String>
+    <system:String x:Key="txtBlkMensajePartidaCancelada2">by one of the Players!</system:String>
+    <system:String x:Key="btnAceptarPalabraCancelada">OK</system:String>
+    <!-- CorreoElectronicoErroneo -->
+    <system:String x:Key="txtBlkTituloCorreoErroneo1">Wrong e-mail</system:String>
+    <system:String x:Key="txtBlkTituloCorreoErroneo2">format!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo1">ERROR! The e-mail format</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo2">is example@example.com!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoErroneo3">Change it to continue</system:String>
+    <system:String x:Key="btnAceptarCorreoErroneo">OK</system:String>
+    <!-- CorreoElectronicoEnUso -->
+    <system:String x:Key="txtBlkTituloCorreoEnUso1">E-mail already</system:String>
+    <system:String x:Key="txtBlkTituloCorreoEnUso2">in use!</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso1">ERROR! The entered e-mail</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso2">has been already signed</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso3">on the system! Try another one</system:String>
+    <system:String x:Key="txtBlkMensajeCorreoElectronicoEnUso4">to continue or try it later</system:String>
+    <system:String x:Key="btnAceptarCorreoEnUso">OK</system:String>
+    <!-- CampoErroneo -->
+    <system:String x:Key="txtBlkTituloCamposErroneos1">Wrong field!</system:String>
+    <system:String x:Key="txtBlkMensajeCamposErroneo1">ERROR! The format of the field</system:String>
+    <system:String x:Key="txtBlkMensajeCamposErroneo2">is wrong! Change it to continue</system:String>
+    <system:String x:Key="btnAceptarCampoErroneo">OK</system:String>
+    <!-- FechaNacimientoErroneo -->
+    <system:String x:Key="txtBlkTituloFechaNacimientoErroneo1">Wrong</system:String>
+    <system:String x:Key="txtBlkTituloFechaNacimientoErroneo2">Birthdate!</system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea1">ERROR! The birthdate format</system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea2">is dd-MM-yyyy. Change</system:String>
+    <system:String x:Key="txtBlkMensajeFechaNacimientoErronea3">it to continue</system:String>
+    <system:String x:Key="btnAceptarFechaNacimientoErronea">OK</system:String>
+    <!-- ContraseniaErroneo-->
+    <system:String x:Key="txtBlkTituloContraseniaErroneo1">Wrong</system:String>
+    <system:String x:Key="txtBlkTituloContraseniaErroneo2">Password!</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo1">ERROR! The Password must have 8</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo2">letters, have a capital letter, a lower-</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo3">case letter and a special letter!</system:String>
+    <system:String x:Key="txtBlkMensajeContraseniaErroneo4">Change it to continue</system:String>
+    <system:String x:Key="btnAceptarContraseniaErroneo">OK</system:String>
+</ResourceDictionary>

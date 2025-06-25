@@ -1,0 +1,256 @@
+﻿<Page x:Class="HangmanGame_Cliente.Cliente.Vistas.PartidaAhorcado"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HangmanGame_Cliente.Cliente.Vistas"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="PartidaAhorcado">
+    <Page.Background>
+        <ImageBrush ImageSource="/Cliente/Recursos/matchBackground.png"/>
+    </Page.Background>
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="266,19,0,0" VerticalAlignment="Top" Height="98" Width="979" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/labelBackground.png"/>
+            </Label.Background>
+            <TextBlock x:Name="tbPista" TextAlignment="Center" Width="943" FontSize="26"> Es el album de música más<LineBreak/> vendido de la historia</TextBlock>
+        </Label>
+        <Button Content="{DynamicResource btnAbandonarPartida}" HorizontalAlignment="Left" Margin="45,605,0,0" VerticalAlignment="Top" Width="248" Height="66" FontFamily="pack://application:,,,/Font/#MedievalSharp"  FontSize="40" Foreground="Black" BorderBrush="{x:Null}" Click="AbandonarPartida">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="orca" HorizontalAlignment="Left" Margin="2,32,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="547" Width="238">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/hangElement.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="casco" HorizontalAlignment="Left" Margin="141,140,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="64" Width="78" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/casco.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="pechera" HorizontalAlignment="Left" Margin="122,204,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="144" Width="116" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/pechera.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="brazoder" HorizontalAlignment="Left" Margin="240,257,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="59" Width="53" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/brazoder.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="brazoizq" HorizontalAlignment="Left" Margin="78,260,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="59" Width="53" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/brazoizq.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="botaizq" HorizontalAlignment="Left" Margin="116,365,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="67" Width="57" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/botaizq.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="botader" HorizontalAlignment="Left" Margin="185,365,0,0" VerticalAlignment="Top" Foreground="{x:Null}" Height="67" Width="55" Visibility="Hidden">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/botader.png"/>
+            </Label.Background>
+        </Label>
+        <Button Content="Q" HorizontalAlignment="Left" Margin="309,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="93" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="W" HorizontalAlignment="Left" Margin="405,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="E" HorizontalAlignment="Left" Margin="502,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="R" Width="94" VerticalAlignment="Top" Margin="598,323,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="T" HorizontalAlignment="Left" Margin="695,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="93" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Y" HorizontalAlignment="Left" Margin="791,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="U" HorizontalAlignment="Left" Margin="888,323,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="I" Width="94" VerticalAlignment="Top" Margin="984,323,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="O" Width="94" VerticalAlignment="Top" Margin="1081,323,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="P" Width="94" VerticalAlignment="Top" Margin="1177,323,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="A" HorizontalAlignment="Left" Margin="309,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="92" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="S" HorizontalAlignment="Left" Margin="405,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="D" HorizontalAlignment="Left" Margin="501,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="F" Width="94" VerticalAlignment="Top" Margin="597,455,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="G" HorizontalAlignment="Left" Margin="695,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="92" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="H" HorizontalAlignment="Left" Margin="791,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="J" HorizontalAlignment="Left" Margin="887,455,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="K" Width="94" VerticalAlignment="Top" Margin="983,455,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="L" Width="94" VerticalAlignment="Top" Margin="1081,455,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Ñ" Width="94" VerticalAlignment="Top" Margin="1177,455,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Z" HorizontalAlignment="Left" Margin="405,587,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="X" HorizontalAlignment="Left" Margin="501,587,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="C" Width="94" VerticalAlignment="Top" Margin="597,587,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="V" HorizontalAlignment="Left" Margin="695,587,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="92" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="B" HorizontalAlignment="Left" Margin="791,587,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="N" HorizontalAlignment="Left" Margin="887,587,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="40" Height="125" Width="94" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="M" Width="94" VerticalAlignment="Top" Margin="983,587,0,0" Height="125" HorizontalAlignment="Left" FontSize="40" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="{x:Null}" Click="LetterButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/tombstoneLetter.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelPrimeraLetra" Content="1" HorizontalAlignment="Left" Margin="385,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelSegundaLetra" Content="2" HorizontalAlignment="Left" Margin="457,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelTerceraLetra" Content="3" HorizontalAlignment="Left" Margin="529,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelCuartaLetra" Content="4" HorizontalAlignment="Left" Margin="601,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelQuintaLetra" Content="5" HorizontalAlignment="Left" Margin="673,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelSextaLetra" Content="6" HorizontalAlignment="Left" Margin="745,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelSeptimaLetra" Content="7" HorizontalAlignment="Left" Margin="817,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelOctavaLetra" Content="8" HorizontalAlignment="Left" Margin="889,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelNovenaLetra" Content="9" HorizontalAlignment="Left" Margin="961,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelDecimaLetra" Content="10" HorizontalAlignment="Left" Margin="1033,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelOnceavaLetra" Content="11" HorizontalAlignment="Left" Margin="1105,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelDoceavaLetra" Content="12" HorizontalAlignment="Left" Margin="1177,178,0,0" VerticalAlignment="Top" Foreground="White" Height="53" Width="70" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="35" HorizontalContentAlignment="Center">
+            <Label.Background>
+                <ImageBrush ImageSource="/Cliente/Recursos/letterWordMatchBackground.png"/>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Page>

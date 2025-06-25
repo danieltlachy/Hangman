@@ -1,0 +1,32 @@
+﻿<Window x:Class="HangmanGame_Cliente.Cliente.Alertas.FechaNacimientoErroneo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HangmanGame_Cliente.Cliente.Alertas"      
+      WindowStyle="None"
+      ResizeMode="NoResize"
+      SizeToContent="WidthAndHeight"
+      WindowStartupLocation="CenterOwner"
+      Background="Transparent"
+      AllowsTransparency="True"
+      ShowInTaskbar="False"
+      Topmost="True">
+    <Grid>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="400">
+            <Image Source="/Cliente/Recursos/allWrongAlert.png" Stretch="Fill" />
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+                <TextBlock x:Name="txtBlkTituloFechaNacimientoErroneo1" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="50" Foreground="White" TextAlignment="Center" Cursor="Hand" Text="{DynamicResource txtBlkTituloFechaNacimientoErroneo1}" />
+                <TextBlock x:Name="txtBlkTituloFechaNacimientoErroneo2" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="50" Foreground="White" TextAlignment="Center" Margin="0,-10,0,0" Cursor="Hand" Text="{DynamicResource txtBlkTituloFechaNacimientoErroneo2}" />
+                <TextBlock x:Name="txtBlkMensajeFechaNacimientoErronea1" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="30" Foreground="White" TextAlignment="Center" Cursor="Hand" Text="{DynamicResource txtBlkMensajeFechaNacimientoErronea1}" />
+                <TextBlock x:Name="txtBlkMensajeFechaNacimientoErronea2" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="30" Foreground="White" TextAlignment="Center" Cursor="Hand" Text="{DynamicResource txtBlkMensajeFechaNacimientoErronea2}" />
+                <TextBlock x:Name="txtBlkMensajeFechaNacimientoErronea3" FontFamily="pack://application:,,,/Font/#MedievalSharp" FontSize="30" Foreground="White" TextAlignment="Center"  Margin="0,0,0,0" Cursor="Hand" Text="{DynamicResource txtBlkMensajeFechaNacimientoErronea3}" />
+                <Button x:Name="btnAceptarFechaNacimientoErronea" Width="120" Height="40" FontSize="25" FontFamily="pack://application:,,,/Font/#MedievalSharp" Foreground="White" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" Margin="0,10,0,-20" Cursor="Hand" Click="Aceptar_Click" Content="{DynamicResource btnAceptarFechaNacimientoErronea}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Cliente/Recursos/buttonBackground.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Biblioteca.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Biblioteca.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ResponseDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:JugadorDTO" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseDTO" nillable="true" type="tns:ResponseDTO" />
+  <xs:complexType name="JugadorDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contraseña" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_nacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id_jugador" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="puntuacion" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JugadorDTO" nillable="true" type="tns:JugadorDTO" />
+  <xs:complexType name="ResponsePalabrasConIdDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:Palabras" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponsePalabrasConIdDTO" nillable="true" type="tns:ResponsePalabrasConIdDTO" />
+  <xs:complexType name="Palabras">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PalabrasConId" nillable="true" type="tns:ArrayOfPalabraDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Palabras" nillable="true" type="tns:Palabras" />
+  <xs:complexType name="ArrayOfPalabraDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PalabraDTO" nillable="true" type="tns:PalabraDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPalabraDTO" nillable="true" type="tns:ArrayOfPalabraDTO" />
+  <xs:complexType name="PalabraDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdPalabra" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Palabras" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_en" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_en" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pista" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PalabraDTO" nillable="true" type="tns:PalabraDTO" />
+  <xs:complexType name="ResponsePartidaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:PartidaDTO" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="partida" nillable="true" type="tns:PartidaDTO" />
+      <xs:element minOccurs="0" name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponsePartidaDTO" nillable="true" type="tns:ResponsePartidaDTO" />
+  <xs:complexType name="PartidaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaPartida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdAdivinador" type="xs:int" />
+      <xs:element minOccurs="0" name="IdEstadoPartida" type="xs:int" />
+      <xs:element minOccurs="0" name="IdIdiomaPartida" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPalabra" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPartida" type="xs:int" />
+      <xs:element minOccurs="0" name="IdRetador" type="xs:int" />
+      <xs:element minOccurs="0" name="Idioma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nickname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NicknameRetador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Palabra" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Partidas" nillable="true" type="tns:ArrayOfPartidaDTO" />
+      <xs:element minOccurs="0" name="Pista" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PistaEn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PartidaDTO" nillable="true" type="tns:PartidaDTO" />
+  <xs:complexType name="ArrayOfPartidaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PartidaDTO" nillable="true" type="tns:PartidaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPartidaDTO" nillable="true" type="tns:ArrayOfPartidaDTO" />
+  <xs:complexType name="ResponseResultadoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:ResultadoDTO" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseResultadoDTO" nillable="true" type="tns:ResponseResultadoDTO" />
+  <xs:complexType name="ResultadoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaPartida" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Gano" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PalabraAdivinar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Puntos" type="xs:int" />
+      <xs:element minOccurs="0" name="UsuarioOponente" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultadoDTO" nillable="true" type="tns:ResultadoDTO" />
+  <xs:complexType name="ResponseEstadisticaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" nillable="true" type="tns:EstadisticaDTO" />
+      <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseEstadisticaDTO" nillable="true" type="tns:ResponseEstadisticaDTO" />
+  <xs:complexType name="EstadisticaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estadisticas" nillable="true" type="tns:ArrayOfEstadisticaDTO" />
+      <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nickname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Puntos" type="xs:int" />
+      <xs:element minOccurs="0" name="Resultado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EstadisticaDTO" nillable="true" type="tns:EstadisticaDTO" />
+  <xs:complexType name="ArrayOfEstadisticaDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EstadisticaDTO" nillable="true" type="tns:EstadisticaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEstadisticaDTO" nillable="true" type="tns:ArrayOfEstadisticaDTO" />
+</xs:schema>

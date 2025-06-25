@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="HangmanServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IHangmanService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsam:Addressing>
+          <wsp:Policy>
+            <wsam:AnonymousResponses>
+            </wsam:AnonymousResponses>
+          </wsp:Policy>
+        </wsam:Addressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Biblioteca.DTO" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHangmanService_Autenticacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Autenticacion" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_Autenticacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerPalabrasPorCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPalabrasPorCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerPalabrasPorCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPalabrasPorCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_CrearPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPartida" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_CrearPartida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPartidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerPartidasDisponibles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPartidasDisponibles" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerPartidasDisponibles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPartidasDisponiblesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_UnirsePartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnirsePartida" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_UnirsePartida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnirsePartidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerEstadoPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoPartida" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerEstadoPartida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoPartidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_GuardarResultado_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResultado" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_GuardarResultado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResultadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerEstadisticasPorJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadisticasPorJugador" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ObtenerEstadisticasPorJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadisticasPorJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_RegistrarJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarJugador" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_RegistrarJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ActualizarJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarJugador" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_ActualizarJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_CancelarPartida_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarPartida" />
+  </wsdl:message>
+  <wsdl:message name="IHangmanService_CancelarPartida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarPartidaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHangmanService">
+    <wsdl:operation name="Autenticacion">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/Autenticacion" message="tns:IHangmanService_Autenticacion_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/AutenticacionResponse" message="tns:IHangmanService_Autenticacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPalabrasPorCategoria">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/ObtenerPalabrasPorCategoria" message="tns:IHangmanService_ObtenerPalabrasPorCategoria_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/ObtenerPalabrasPorCategoriaResponse" message="tns:IHangmanService_ObtenerPalabrasPorCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPartida">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/CrearPartida" message="tns:IHangmanService_CrearPartida_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/CrearPartidaResponse" message="tns:IHangmanService_CrearPartida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPartidasDisponibles">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/ObtenerPartidasDisponibles" message="tns:IHangmanService_ObtenerPartidasDisponibles_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/ObtenerPartidasDisponiblesResponse" message="tns:IHangmanService_ObtenerPartidasDisponibles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnirsePartida">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/UnirsePartida" message="tns:IHangmanService_UnirsePartida_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/UnirsePartidaResponse" message="tns:IHangmanService_UnirsePartida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoPartida">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/ObtenerEstadoPartida" message="tns:IHangmanService_ObtenerEstadoPartida_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/ObtenerEstadoPartidaResponse" message="tns:IHangmanService_ObtenerEstadoPartida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarResultado">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/GuardarResultado" message="tns:IHangmanService_GuardarResultado_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/GuardarResultadoResponse" message="tns:IHangmanService_GuardarResultado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadisticasPorJugador">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/ObtenerEstadisticasPorJugador" message="tns:IHangmanService_ObtenerEstadisticasPorJugador_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/ObtenerEstadisticasPorJugadorResponse" message="tns:IHangmanService_ObtenerEstadisticasPorJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarJugador">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/RegistrarJugador" message="tns:IHangmanService_RegistrarJugador_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/RegistrarJugadorResponse" message="tns:IHangmanService_RegistrarJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarJugador">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/ActualizarJugador" message="tns:IHangmanService_ActualizarJugador_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/ActualizarJugadorResponse" message="tns:IHangmanService_ActualizarJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarPartida">
+      <wsdl:input wsam:Action="http://tempuri.org/IHangmanService/CancelarPartida" message="tns:IHangmanService_CancelarPartida_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IHangmanService/CancelarPartidaResponse" message="tns:IHangmanService_CancelarPartida_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IHangmanService" type="tns:IHangmanService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IHangmanService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Autenticacion">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/Autenticacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPalabrasPorCategoria">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/ObtenerPalabrasPorCategoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPartida">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/CrearPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPartidasDisponibles">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/ObtenerPartidasDisponibles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnirsePartida">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/UnirsePartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoPartida">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/ObtenerEstadoPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarResultado">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/GuardarResultado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadisticasPorJugador">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/ObtenerEstadisticasPorJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarJugador">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/RegistrarJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarJugador">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/ActualizarJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarPartida">
+      <soap12:operation soapAction="http://tempuri.org/IHangmanService/CancelarPartida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HangmanServicio">
+    <wsdl:port name="NetTcpBinding_IHangmanService" binding="tns:NetTcpBinding_IHangmanService">
+      <soap12:address location="net.tcp://localhost:8001/HangmanService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8001/HangmanService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
